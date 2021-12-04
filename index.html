@@ -443,10 +443,56 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" data-modal-open>
         <button class="modal-close" data-modal-close>
-          <svg width="11" height="11">
+          <svg width="11" height="11" class="close-icon">
             <use href="./images/new-sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="callback-form">
+          <p class="callback-form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="callback-form-label">
+            Имя
+            <span class="callback-form-group">
+              <input type="text" name="name" class="callback-form-input" />
+              <svg width="18" height="18" class="callback-input-icon">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="callback-form-label">
+            Телефон
+            <span class="callback-form-group">
+              <input type="tel" name="tel" class="callback-form-input" />
+              <svg width="18" height="18" class="callback-input-icon">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="callback-form-label">
+            Почта
+            <span class="callback-form-group">
+              <input type="email" name="email" class="callback-form-input" />
+              <svg width="18" height="18" class="callback-input-icon">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="callback-form-label">
+            Комментарий
+            <textarea
+              name="comment"
+              placeholder="Введите текст"
+              class="callback-form-comment"
+            ></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input visually-hidden" />
+            <svg width="16" height="15" class="checkbox-icon">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю<a href="" class="policy">Условия договора</a>
+          </label>
+          <button type="submit" class="callback-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
