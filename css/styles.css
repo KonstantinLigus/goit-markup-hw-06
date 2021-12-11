@@ -409,6 +409,9 @@ nav {
   padding-bottom: 60px;
   background-color: var(--footer-hero-bg-color);
 }
+.logo-address-container {
+  flex-grow: 1;
+}
 .address-set {
   margin-top: 20px;
 }
@@ -654,6 +657,7 @@ nav {
   outline: none;
 }
 .callback-form-comment {
+  display: block;
   margin-top: 4px;
   padding-right: 16px;
   padding-left: 16px;
@@ -699,6 +703,7 @@ nav {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-first-color);
+  cursor: pointer;
 }
 .checkbox-input {
 }
